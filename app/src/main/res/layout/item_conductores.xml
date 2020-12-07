@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.percentlayout.widget.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/item_conductores"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="8dp"
+        app:cardElevation="3dp"
+        app:cardCornerRadius="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:orientation="vertical"
+            android:layout_margin="5dp">
+
+            <androidx.percentlayout.widget.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    app:layout_widthPercent="100%"
+                    app:layout_aspectRatio="450%"
+                    android:orientation="horizontal">
+
+                    <androidx.percentlayout.widget.PercentRelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <com.mikhaellopez.circularimageview.CircularImageView
+                            android:id="@+id/foto_vehc"
+                            android:transitionName="foto"
+                            app:layout_widthPercent="80%"
+                            app:layout_aspectRatio="100%"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            app:layout_marginStartPercent="3%"
+                            android:elevation="5dp"
+                            android:scaleType="centerInside"
+                            app:civ_border_width="0dp"
+                            app:civ_circle_color="@color/naranja"
+                            android:clickable="true"/>
+                        <com.mikhaellopez.circularimageview.CircularImageView
+                            android:id="@+id/foto"
+                            android:transitionName="foto"
+                            app:layout_widthPercent="45%"
+                            app:layout_aspectRatio="100%"
+                            android:layout_alignParentEnd="true"
+                            app:layout_marginEndPercent="3%"
+                            android:layout_alignParentBottom="true"
+                            app:layout_marginBottomPercent="3%"
+                            android:scaleType="centerInside"
+                            android:elevation="5dp"
+                            android:layout_gravity="bottom"
+                            app:civ_border_width="0dp"
+                            android:clickable="true"/>
+
+                    </androidx.percentlayout.widget.PercentRelativeLayout>
+
+                    <androidx.percentlayout.widget.PercentRelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.6">
+
+                        <TextView
+                            android:id="@+id/nombre"
+                            app:layout_widthPercent="90%"
+                            app:layout_heightPercent="54%"
+                            android:layout_centerInParent="true"
+                            android:gravity="center_vertical"
+                            android:text="Angel de Jesus Claveria Mendez"
+                            android:autoSizeTextType="uniform"
+                            android:textAlignment="center" />
+
+                    </androidx.percentlayout.widget.PercentRelativeLayout>
+
+                    <androidx.percentlayout.widget.PercentRelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.3">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+                            <androidx.percentlayout.widget.PercentRelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <ImageView
+                                    android:id="@+id/icono"
+                                    app:layout_widthPercent="100%"
+                                    app:layout_heightPercent="30%"
+                                    android:layout_centerInParent="true"
+                                    android:scaleType="centerCrop"
+                                    android:layout_marginStart="0dp"
+                                    android:src="@drawable/ic_person_pin_fill" />
+
+                            </androidx.percentlayout.widget.PercentRelativeLayout>
+
+                            <androidx.percentlayout.widget.PercentRelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.8">
+
+                                <TextView
+                                    android:id="@+id/distancia"
+                                    app:layout_widthPercent="100%"
+                                    app:layout_heightPercent="30%"
+                                    android:gravity="center_vertical"
+                                    android:layout_centerInParent="true"
+                                    android:text="a 000Km"
+                                    android:autoSizeTextType="uniform"
+                                    android:textAlignment="center"  />
+
+                            </androidx.percentlayout.widget.PercentRelativeLayout>
+
+                            <androidx.percentlayout.widget.PercentRelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.3">
+
+                                <ImageButton
+                                    android:id="@+id/favoritar"
+                                    app:layout_widthPercent="100%"
+                                    app:layout_heightPercent="80%"
+                                    android:layout_centerInParent="true"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/ic_heart"
+                                    android:elevation="0dp"
+                                    android:background="#00FDFFFF"
+                                    android:clickable="true"/>
+
+                            </androidx.percentlayout.widget.PercentRelativeLayout>
+
+
+
+                        </LinearLayout>
+
+
+
+                    </androidx.percentlayout.widget.PercentRelativeLayout>
+
+
+
+
+
+
+                </LinearLayout>
+
+            </androidx.percentlayout.widget.PercentRelativeLayout>
+
+            <androidx.percentlayout.widget.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/detalles"
+                    app:layout_widthPercent="100%"
+                    app:layout_aspectRatio="400%"
+                    android:orientation="vertical"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp">
+
+                    <androidx.percentlayout.widget.PercentRelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.hsalf.smilerating.SmileRating
+                            android:id="@+id/valoracion"
+                            app:layout_widthPercent="65%"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"/>
+
+                    </androidx.percentlayout.widget.PercentRelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <androidx.percentlayout.widget.PercentRelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <Button
+                                android:id="@+id/solicitar"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Solicitar"
+                                android:textColor="@color/black"
+                                android:background="@color/transp"/>
+
+                        </androidx.percentlayout.widget.PercentRelativeLayout>
+
+                        <androidx.percentlayout.widget.PercentRelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <Button
+                                android:id="@+id/reservar"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Reservar"
+                                android:textColor="@color/black"
+                                android:background="@color/transp"/>
+
+                        </androidx.percentlayout.widget.PercentRelativeLayout>
+
+
+                    </LinearLayout>
+
+
+
+
+
+
+                </LinearLayout>
+
+            </androidx.percentlayout.widget.PercentRelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+</androidx.percentlayout.widget.PercentRelativeLayout>
+

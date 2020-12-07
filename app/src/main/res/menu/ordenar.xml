@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item android:title="Ordenar" android:enabled="false"
+        android:textColor="#000000"
+        />
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/ord_dist"
+            android:title="Por Distancia" />
+        <item
+            android:id="@+id/ord_val"
+            android:title="Por Valoración" />
+
+    </group>
+
+</menu>

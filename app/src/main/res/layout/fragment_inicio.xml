@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.percentlayout.widget.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".InicioFragment">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/foto_perfil"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:elevation="10dp"
+        android:src="@drawable/ic_user"
+        app:layout_aspectRatio="100%"
+        app:layout_marginTopPercent="3%"
+        app:layout_widthPercent="32%" />
+
+
+    <androidx.percentlayout.widget.PercentRelativeLayout
+        android:id="@+id/backg_inicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/shape_inicio"
+        android:elevation="9dp"
+        app:layout_heightPercent="88%">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/info"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="7dp"
+            app:layout_heightPercent="25%"
+            app:layout_marginTopPercent="15%"
+            app:layout_widthPercent="83%">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.75"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="21dp"
+                        android:layout_marginTop="20dp">
+
+                        <ImageView
+                            android:id="@+id/searchingLocation"
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:src="@drawable/ic_location_searching_black_24dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="3dp"
+                            android:text="Direccion Actual"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="9dp"
+                        android:layout_marginRight="80dp">
+
+                        <TextView
+                            android:id="@+id/ubicacionCalle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Arturo Soria 27,"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/ubicacionCity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:text="Santiago de Cuba"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.26"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="23dp"
+                            android:layout_height="23dp"
+                            android:layout_marginLeft="20dp"
+                            android:src="@drawable/ic_near_me" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:text="12 Conductores Cercanos"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_alignParentEnd="true"
+            android:elevation="41dp"
+            app:layout_aspectRatio="100%"
+            app:layout_marginEndPercent="14%"
+            app:layout_marginTopPercent="18%"
+            app:layout_widthPercent="17%"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/location" />
+
+
+        <RelativeLayout
+            android:id="@+id/go_text"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            app:layout_marginBottomPercent="44%"
+            app:layout_widthPercent="90%">
+
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="16dp"
+                android:gravity="center_vertical"
+                android:text="¿A donde vas?"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/edit"
+            android:layout_alignParentBottom="true"
+            android:elevation="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_edit"
+            android:visibility="gone"
+            app:layout_aspectRatio="100%"
+            app:layout_marginBottomPercent="42%"
+            app:layout_widthPercent="11%" />
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/delet"
+            android:layout_alignParentBottom="true"
+            android:elevation="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_delet"
+            android:visibility="gone"
+            app:layout_aspectRatio="100%"
+            app:layout_marginBottomPercent="42%"
+            app:layout_widthPercent="11%" />
+
+
+        <androidx.percentlayout.widget.PercentRelativeLayout
+            android:id="@+id/layout_add"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone"
+            app:layout_heightPercent="14%"
+            app:layout_marginBottomPercent="42%"
+            app:layout_widthPercent="50%">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                app:layout_marginBottomPercent="20%"
+                app:layout_marginEndPercent="5%"
+                app:layout_marginStartPercent="5%"
+                app:layout_marginTopPercent="5%">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal">
+
+                    <androidx.percentlayout.widget.PercentRelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3.2">
+
+                        <EditText
+                            android:id="@+id/titl_lug"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:hint="Título"
+                            android:maxLength="8" />
+
+                    </androidx.percentlayout.widget.PercentRelativeLayout>
+
+                    <androidx.percentlayout.widget.PercentRelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <com.mikhaellopez.circularimageview.CircularImageView
+                            android:id="@+id/add_lug"
+                            android:layout_width="match_parent"
+                            android:layout_centerVertical="true"
+                            android:elevation="5dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_add_location1"
+                            app:civ_border="false"
+                            app:layout_aspectRatio="100%"
+                            app:layout_marginPercent="10%" />
+
+
+                    </androidx.percentlayout.widget.PercentRelativeLayout>
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.percentlayout.widget.PercentRelativeLayout>
+
+
+    </androidx.percentlayout.widget.PercentRelativeLayout>
+
+    <androidx.percentlayout.widget.PercentRelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:elevation="10dp"
+        android:orientation="horizontal"
+        app:layout_heightPercent="23%"
+        app:layout_marginBottomPercent="13%">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyl_lug_fav"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" />
+
+    </androidx.percentlayout.widget.PercentRelativeLayout>
+
+</androidx.percentlayout.widget.PercentRelativeLayout>

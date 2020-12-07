@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.percentlayout.widget.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main3Activity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/light">
+
+        <ImageView
+            android:id="@+id/back_inicio"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.55"
+            android:scaleType="fitXY"
+            android:transitionName="trans_back_inicio"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.40"
+            android:orientation="vertical"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            >
+
+            <androidx.percentlayout.widget.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.275">
+
+                <soup.neumorphism.NeumorphCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:neumorph_shadowElevation="4dp"
+                    app:neumorph_shadowColorLight="@color/white"
+                    app:neumorph_shadowColorDark="@color/neomorph_shadow_color"
+                    app:neumorph_lightSource="leftTop"
+                    app:neumorph_shapeType="pressed"
+                    app:neumorph_backgroundColor="@color/light"
+                    app:neumorph_inset="10dp"
+                    android:padding="12dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/user"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.85"
+                            android:layout_height="match_parent"
+                            android:hint="Usuario"
+                            android:drawableStart="@drawable/ic_user"
+                            android:cursorVisible="true"
+                            android:maxLength="20"
+                            />
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.15">
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </soup.neumorphism.NeumorphCardView>
+
+                <androidx.percentlayout.widget.PercentRelativeLayout
+                    app:layout_widthPercent="17%"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="12dp">
+
+                    <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+                        android:id="@+id/frame_clear_user"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        app:neomorph_background_color="@color/transp"
+                        app:neomorph_elevation="4dp"
+                        app:neomorph_highlight_color="@color/white"
+                        app:neomorph_layer_type="hardware"
+                        app:neomorph_shadow_color="@color/neomorph_shadow_color"
+                        app:neomorph_shadow_type="outer"
+                        app:neomorph_view_type="circular"
+                        android:visibility="gone">
+
+                        <com.mikhaellopez.circularimageview.CircularImageView
+                            android:id="@+id/clear_user"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:scaleType="centerCrop"
+                            app:civ_border="false"
+                            app:civ_circle_color="@color/light" />
+
+                    </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+
+
+                </androidx.percentlayout.widget.PercentRelativeLayout>
+
+            </androidx.percentlayout.widget.PercentRelativeLayout>
+
+
+            <androidx.percentlayout.widget.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.275">
+
+                <soup.neumorphism.NeumorphCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:neumorph_shadowElevation="4dp"
+                    app:neumorph_shadowColorLight="@color/white"
+                    app:neumorph_shadowColorDark="@color/neomorph_shadow_color"
+                    app:neumorph_lightSource="leftTop"
+                    app:neumorph_shapeType="basin"
+                    app:neumorph_backgroundColor="@color/light"
+                    app:neumorph_inset="10dp"
+                    app:neumorph_strokeWidth="5dp"
+                    app:neumorph_strokeColor="@color/light"
+                    android:padding="12dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/pswd"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.85"
+                            android:cursorVisible="true"
+                            android:drawableStart="@drawable/ic_locked"
+                            android:hint="Contraseña"
+                            android:inputType="textPassword"
+                            android:maxLength="20" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.15" />
+
+
+                    </LinearLayout>
+                </soup.neumorphism.NeumorphCardView>
+                <androidx.percentlayout.widget.PercentRelativeLayout
+                    app:layout_widthPercent="17%"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="12dp">
+
+                    <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+                        android:id="@+id/frame_most_ocul"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        app:neomorph_background_color="@color/transp"
+                        app:neomorph_elevation="6dp"
+                        app:neomorph_highlight_color="@color/white"
+                        app:neomorph_layer_type="hardware"
+                        app:neomorph_shadow_color="@color/neomorph_shadow_color"
+                        app:neomorph_shadow_type="outer"
+                        app:neomorph_view_type="circular"
+                        android:visibility="gone">
+                        <com.mikhaellopez.circularimageview.CircularImageView
+                            android:id="@+id/most_ocul"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:scaleType="centerCrop"
+                            app:civ_border="false"
+                            app:civ_circle_color="@color/light"
+                            android:onClick="mostOcul"/>
+
+                    </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+
+
+
+                </androidx.percentlayout.widget.PercentRelativeLayout>
+
+            </androidx.percentlayout.widget.PercentRelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:orientation="horizontal"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp">
+
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:id="@+id/recordar"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:layout_weight="0.5"
+                    android:text="Recuérdame"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/forget_pswd"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:text="Olvido su contraseña?"
+                    android:gravity="center"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="1"
+                    android:shadowColor="@color/neomorph_shadow_color" />
+
+
+
+            </LinearLayout>
+
+            <androidx.percentlayout.widget.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.24"
+                >
+
+
+                <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+                    android:id="@+id/frame_btn"
+                    app:layout_widthPercent="95%"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    app:neomorph_shadow_type="outer"
+                    app:neomorph_view_type="rectangular"
+                    app:neomorph_elevation="4dp"
+                    app:neomorph_corner_radius="25dp"
+                    app:neomorph_layer_type="hardware"
+                    app:neomorph_shadow_color="@color/neomorph_shadow_color"
+                    app:neomorph_highlight_color="@color/white">
+
+                    <Button
+                        android:id="@+id/iniciar_sesion"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Iniciar Sesion"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorAccent"/>
+
+                </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+
+            </androidx.percentlayout.widget.PercentRelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.13"
+                android:orientation="horizontal"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:text="Aún no tienes cuenta?"
+                    android:textColor="@color/black"
+                    />
+
+                <Button
+                    android:id="@+id/crear_cuenta"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:elevation="0dp"
+                    android:text="Crear Cuenta"
+                    android:textAlignment="center"
+                    android:background="@color/light"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="1"
+                    android:shadowColor="@color/neomorph_shadow_color"
+                    android:onClick="crearCuenta"
+                    android:transitionName="trans_crear_cuenta"/>
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.05"/>
+
+
+    </LinearLayout>
+
+
+
+</androidx.percentlayout.widget.PercentRelativeLayout>

@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.percentlayout.widget.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_white"
+    tools:context=".PerfilFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        app:layout_heightPercent="90%"
+        android:orientation="vertical">
+
+        <androidx.percentlayout.widget.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+
+                <androidx.percentlayout.widget.PercentRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.40">
+
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:id="@+id/foto_perfil"
+                        android:src="@drawable/ic_user"
+                        android:scaleType="centerCrop"
+                        android:layout_centerInParent="true"
+                        app:layout_heightPercent="60%"
+                        app:layout_aspectRatio="100%"/>
+
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:id="@+id/edit_foto"
+                        android:src="@drawable/ic_edit_fill"
+                        android:scaleType="centerInside"
+                        android:layout_alignRight="@+id/foto_perfil"
+                        app:layout_marginTopPercent="60%"
+                        app:layout_heightPercent="20%"
+                        app:layout_aspectRatio="100%"
+                        android:elevation="3dp" />
+
+
+                </androidx.percentlayout.widget.PercentRelativeLayout>
+
+                <androidx.percentlayout.widget.PercentRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.60">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:layout_marginStartPercent="5%"
+                        app:layout_marginEndPercent="5%"
+                        app:layout_marginTopPercent="2%"
+                        app:layout_marginBottomPercent="8%"
+                        app:cardElevation="10dp"
+                        app:cardCornerRadius="15dp"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_margin="10dp">
+
+                            <androidx.percentlayout.widget.PercentRelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+
+                                    <LinearLayout
+                                        android:id="@+id/layout_name"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal">
+
+
+                                        <androidx.percentlayout.widget.PercentRelativeLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.1">
+
+                                            <ImageView
+                                                app:layout_heightPercent="75%"
+                                                app:layout_aspectRatio="100%"
+                                                android:src="@drawable/ic_edit"
+                                                android:tint="@color/naranja"
+                                                android:scaleType="centerCrop"
+                                                android:layout_centerVertical="true"/>
+
+                                        </androidx.percentlayout.widget.PercentRelativeLayout>
+
+                                        <androidx.percentlayout.widget.PercentRelativeLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.78">
+
+                                            <TextView
+                                                android:id="@+id/name"
+                                                android:layout_width="match_parent"
+                                                app:layout_widthPercent="95%"
+                                                app:layout_heightPercent="40%"
+                                                android:layout_alignParentEnd="true"
+                                                android:layout_centerVertical="true"
+                                                android:text="Nombre Completo"
+                                                android:textAlignment="textStart"
+                                                android:autoSizeTextType="uniform"
+                                                android:textColor="@color/colorAccent"/>
+
+                                            <androidx.appcompat.widget.AppCompatEditText
+                                                android:id="@+id/edit_name"
+                                                android:background="@color/transp"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_centerVertical="true"
+                                                android:hint="Nombre Completo"
+                                                android:autoSizeTextType="uniform"
+                                                android:maxLength="40"
+                                                android:textColor="@color/colorAccent"
+                                                android:visibility="gone"/>
+
+
+                                        </androidx.percentlayout.widget.PercentRelativeLayout>
+
+                                        <androidx.percentlayout.widget.PercentRelativeLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.12">
+
+                                            <com.mikhaellopez.circularimageview.CircularImageView
+                                                android:id="@+id/btn_name"
+                                                android:src="@drawable/ic_check"
+                                                app:layout_widthPercent="90%"
+                                                app:layout_aspectRatio="100%"
+                                                android:scaleType="centerInside"
+                                                android:layout_centerInParent="true"
+                                                android:elevation="3dp"
+                                                android:visibility="gone"/>
+
+                                        </androidx.percentlayout.widget.PercentRelativeLayout>
+
+
+
+                                    </LinearLayout>
+
+
+
+
+                                </LinearLayout>
+
+
+                            </androidx.percentlayout.widget.PercentRelativeLayout>
+
+                            <androidx.percentlayout.widget.PercentRelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1">
+
+                                <androidx.percentlayout.widget.PercentRelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp">
+
+                                    <View
+                                        app:layout_widthPercent="80%"
+                                        android:layout_height="match_parent"
+                                        android:layout_centerHorizontal="true"
+                                        android:background="@color/neomorph_shadow_color"/>
+
+                                </androidx.percentlayout.widget.PercentRelativeLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:id="@+id/layout_user"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal">
+
+
+                                        <androidx.percentlayout.widget.PercentRelativeLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.1">
+
+                                            <ImageView
+                                                app:layout_heightPercent="75%"
+                                                app:layout_aspectRatio="100%"
+                                                android:src="@drawable/ic_user"
+                                                android:tint="@color/naranja"
+                                                android:scaleType="centerCrop"
+                                                android:layout_centerVertical="true"/>
+
+                                        </androidx.percentlayout.widget.PercentRelativeLayout>
+
+                                        <androidx.percentlayout.widget.PercentRelativeLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.78">
+
+                                            <TextView
+                                                android:id="@+id/user"
+                                                app:layout_widthPercent="95%"
+                                                app:layout_heightPercent="40%"
+                                                android:layout_alignParentEnd="true"
+                                                android:layout_centerVertical="true"
+                                                android:text="Usuario"
+                                                android:textAlignment="textStart"
+                                                android:autoSizeTextType="uniform"
+                                                android:textColor="@color/colorAccent"/>
+
+                                            <androidx.appcompat.widget.AppCompatEditText
+                                                android:id="@+id/edit_user"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                app:layout_heightPercent="100%"
+                                                android:background="@color/transp"
+                                                android:layout_centerVertical="true"
+                                                android:hint="Usuario"
+                                                android:autoSizeTextType="uniform"
+                                                android:maxLength="20"
+                                                android:textColor="@color/colorAccent"
+                                                android:visibility="gone"/>
+
+
+                                        </androidx.percentlayout.widget.PercentRelativeLayout>
+
+                                        <androidx.percentlayout.widget.PercentRelativeLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.12">
+
+                                            <com.mikhaellopez.circularimageview.CircularImageView
+                                                android:id="@+id/btn_user"
+                                                android:src="@drawable/ic_check"
+                                                app:layout_widthPercent="90%"
+                                                app:layout_aspectRatio="100%"
+                                                android:scaleType="centerInside"
+                                                android:layout_centerInParent="true"
+                                                android:elevation="3dp"
+                                                android:visibility="gone"/>
+
+                                        </androidx.percentlayout.widget.PercentRelativeLayout>
+
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+
+
+
+                            </androidx.percentlayout.widget.PercentRelativeLayout>
+
+                            <androidx.percentlayout.widget.PercentRelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1">
+
+                                <androidx.percentlayout.widget.PercentRelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp">
+
+                                    <View
+                                        app:layout_widthPercent="80%"
+                                        android:layout_height="match_parent"
+                                        android:layout_centerHorizontal="true"
+                                        android:background="@color/neomorph_shadow_color"/>
+
+                                </androidx.percentlayout.widget.PercentRelativeLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+
+                                    <LinearLayout
+                                        android:id="@+id/layout_pswd"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal">
+
+
+                                        <androidx.percentlayout.widget.PercentRelativeLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.1">
+
+                                            <ImageView
+                                                app:layout_heightPercent="75%"
+                                                app:layout_aspectRatio="100%"
+                                                android:src="@drawable/ic_locked"
+                                                android:tint="@color/naranja"
+                                                android:scaleType="centerCrop"
+                                                android:layout_centerVertical="true"/>
+
+                                        </androidx.percentlayout.widget.PercentRelativeLayout>
+
+                                        <androidx.percentlayout.widget.PercentRelativeLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.78">
+
+                                            <TextView
+                                                android:id="@+id/pswd"
+                                                app:layout_widthPercent="95%"
+                                                app:layout_heightPercent="40%"
+                                                android:layout_alignParentEnd="true"
+                                                android:layout_centerVertical="true"
+                                                android:text="Contraseña"
+                                                android:textAlignment="textStart"
+                                                android:autoSizeTextType="uniform"
+                                                android:textColor="@color/colorAccent"/>
+
+                                            <androidx.appcompat.widget.AppCompatEditText
+                                                android:id="@+id/edit_pswd"
+                                                android:background="@color/transp"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_centerVertical="true"
+                                                android:hint="Contraseña"
+                                                android:autoSizeTextType="uniform"
+                                                android:maxLength="20"
+                                                android:textColor="@color/colorAccent"
+                                                android:visibility="gone"/>
+
+
+                                        </androidx.percentlayout.widget.PercentRelativeLayout>
+
+                                        <androidx.percentlayout.widget.PercentRelativeLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.12">
+
+                                            <com.mikhaellopez.circularimageview.CircularImageView
+                                                android:id="@+id/btn_pswd"
+                                                android:src="@drawable/ic_check"
+                                                app:layout_widthPercent="90%"
+                                                app:layout_aspectRatio="100%"
+                                                android:scaleType="centerInside"
+                                                android:layout_centerInParent="true"
+                                                android:elevation="3dp"
+                                                android:visibility="gone"/>
+
+                                        </androidx.percentlayout.widget.PercentRelativeLayout>
+
+
+
+                                    </LinearLayout>
+
+
+
+                                </LinearLayout>
+
+
+                            </androidx.percentlayout.widget.PercentRelativeLayout>
+
+                            <androidx.percentlayout.widget.PercentRelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1">
+
+                                <androidx.percentlayout.widget.PercentRelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp">
+
+                                    <View
+                                        app:layout_widthPercent="80%"
+                                        android:layout_height="match_parent"
+                                        android:layout_centerHorizontal="true"
+                                        android:background="@color/neomorph_shadow_color"/>
+
+                                </androidx.percentlayout.widget.PercentRelativeLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:id="@+id/layout_email"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal">
+
+
+                                        <androidx.percentlayout.widget.PercentRelativeLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.1">
+
+                                            <ImageView
+                                                app:layout_heightPercent="75%"
+                                                app:layout_aspectRatio="100%"
+                                                android:src="@drawable/ic_mail"
+                                                android:tint="@color/naranja"
+                                                android:scaleType="centerCrop"
+                                                android:layout_centerVertical="true"/>
+
+                                        </androidx.percentlayout.widget.PercentRelativeLayout>
+
+                                        <androidx.percentlayout.widget.PercentRelativeLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.78">
+
+                                            <TextView
+                                                android:id="@+id/email"
+                                                app:layout_widthPercent="95%"
+                                                app:layout_heightPercent="40%"
+                                                android:layout_alignParentEnd="true"
+                                                android:layout_centerVertical="true"
+                                                android:text="Correo"
+                                                android:textAlignment="textStart"
+                                                android:autoSizeTextType="uniform"
+                                                android:textColor="@color/colorAccent"/>
+
+                                            <androidx.appcompat.widget.AppCompatEditText
+                                                android:background="@color/transp"
+                                                android:id="@+id/edit_email"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_centerVertical="true"
+                                                android:hint="Correo"
+                                                android:autoSizeTextType="uniform"
+                                                android:maxLength="40"
+                                                android:textColor="@color/colorAccent"
+                                                android:visibility="gone"/>
+
+
+                                        </androidx.percentlayout.widget.PercentRelativeLayout>
+
+                                        <androidx.percentlayout.widget.PercentRelativeLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.12">
+
+                                            <com.mikhaellopez.circularimageview.CircularImageView
+                                                android:id="@+id/btn_email"
+                                                android:src="@drawable/ic_check"
+                                                app:layout_widthPercent="90%"
+                                                app:layout_aspectRatio="100%"
+                                                android:scaleType="centerInside"
+                                                android:layout_centerInParent="true"
+                                                android:elevation="3dp"
+                                                android:visibility="gone"/>
+
+                                        </androidx.percentlayout.widget.PercentRelativeLayout>
+
+
+
+                                    </LinearLayout>
+
+
+
+
+                                </LinearLayout>
+
+
+                            </androidx.percentlayout.widget.PercentRelativeLayout>
+
+                            <androidx.percentlayout.widget.PercentRelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1">
+
+                                <androidx.percentlayout.widget.PercentRelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp">
+
+                                    <View
+                                        app:layout_widthPercent="80%"
+                                        android:layout_height="match_parent"
+                                        android:layout_centerHorizontal="true"
+                                        android:background="@color/neomorph_shadow_color"/>
+
+                                </androidx.percentlayout.widget.PercentRelativeLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:id="@+id/layout_phone"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal">
+
+
+                                        <androidx.percentlayout.widget.PercentRelativeLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.1">
+
+                                            <ImageView
+                                                app:layout_heightPercent="75%"
+                                                app:layout_aspectRatio="100%"
+                                                android:src="@drawable/ic_phone"
+                                                android:tint="@color/naranja"
+                                                android:scaleType="centerCrop"
+                                                android:layout_centerVertical="true"/>
+
+                                        </androidx.percentlayout.widget.PercentRelativeLayout>
+
+                                        <androidx.percentlayout.widget.PercentRelativeLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.78">
+
+                                            <TextView
+                                                android:id="@+id/phone"
+                                                app:layout_widthPercent="95%"
+                                                app:layout_heightPercent="40%"
+                                                android:layout_alignParentEnd="true"
+                                                android:layout_centerVertical="true"
+                                                android:text="Teléfono"
+                                                android:textAlignment="textStart"
+                                                android:autoSizeTextType="uniform"
+                                                android:textColor="@color/colorAccent"/>
+
+                                            <androidx.appcompat.widget.AppCompatEditText
+                                                android:id="@+id/edit_phone"
+                                                android:background="@color/transp"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_centerVertical="true"
+                                                android:hint="Teléfono"
+                                                android:autoSizeTextType="uniform"
+                                                android:maxLength="8"
+                                                android:textColor="@color/colorAccent"
+                                                android:visibility="gone"/>
+
+
+                                        </androidx.percentlayout.widget.PercentRelativeLayout>
+
+                                        <androidx.percentlayout.widget.PercentRelativeLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.12">
+
+                                            <com.mikhaellopez.circularimageview.CircularImageView
+                                                android:id="@+id/btn_phone"
+                                                android:src="@drawable/ic_check"
+                                                app:layout_widthPercent="90%"
+                                                app:layout_aspectRatio="100%"
+                                                android:scaleType="centerInside"
+                                                android:layout_centerInParent="true"
+                                                android:elevation="3dp"
+                                                android:visibility="gone"/>
+
+                                        </androidx.percentlayout.widget.PercentRelativeLayout>
+
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+
+                            </androidx.percentlayout.widget.PercentRelativeLayout>
+
+
+                        </LinearLayout>
+
+
+
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.percentlayout.widget.PercentRelativeLayout>
+
+
+
+            </LinearLayout>
+
+        </androidx.percentlayout.widget.PercentRelativeLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.percentlayout.widget.PercentRelativeLayout>

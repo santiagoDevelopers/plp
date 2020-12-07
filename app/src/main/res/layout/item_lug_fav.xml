@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.percentlayout.widget.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    >
+
+
+    <androidx.percentlayout.widget.PercentRelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <androidx.percentlayout.widget.PercentRelativeLayout
+            app:layout_heightPercent="100%"
+            app:layout_aspectRatio="100%"
+            android:elevation="20dp"
+            android:orientation="horizontal"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/lug_fav"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                app:layout_marginStartPercent="8%"
+                app:layout_marginEndPercent="10%"
+                android:layout_marginBottom="18dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp">
+                <androidx.percentlayout.widget.PercentRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:orientation="horizontal">
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/back_rounded"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        app:riv_corner_radius="20dp"/>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_centerInParent="true"
+                        app:layout_marginPercent="5%">
+
+                        <androidx.percentlayout.widget.PercentRelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="2.5">
+
+                            <com.mikhaellopez.circularimageview.CircularImageView
+                                android:id="@+id/img_icon"
+                                app:layout_widthPercent="50%"
+                                app:layout_aspectRatio="100%"
+                                android:layout_centerInParent="true"
+                                android:scaleType="centerInside"
+                                android:elevation="5dp"
+                                app:civ_border="false"
+                                app:civ_shadow_color="@color/naranja"
+                                android:clickable="false"/>
+
+                        </androidx.percentlayout.widget.PercentRelativeLayout>
+
+                        <androidx.percentlayout.widget.PercentRelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/lugar"
+                                app:layout_widthPercent="60%"
+                                app:layout_heightPercent="60%"
+                                android:text="Prueba"
+                                android:layout_centerHorizontal="true"
+                                android:autoSizeTextType="uniform"
+                                android:textAlignment="center"
+                                android:shadowDx="2"
+                                android:shadowDy="2"
+                                android:shadowRadius="1"
+                                android:shadowColor="@color/neomorph_shadow_color"
+                                android:textColor="@android:color/black"/>
+
+
+                        </androidx.percentlayout.widget.PercentRelativeLayout>
+
+
+
+
+                    </LinearLayout>
+
+
+                </androidx.percentlayout.widget.PercentRelativeLayout>
+
+
+
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </androidx.percentlayout.widget.PercentRelativeLayout>
+
+
+    </androidx.percentlayout.widget.PercentRelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.percentlayout.widget.PercentRelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

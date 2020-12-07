@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFA15A</color>
+    <color name="colorPrimaryDark">#FFA15A</color>
+    <color name="colorAccent">#000000</color>
+    <color name="celest">#88000000</color>
+    <color name="yellow">#FFD600</color>
+    <color name="orange">#FFA15A</color>
+    <color name="orangeP">#FFC9A1</color>
+    <color name="white">#FFFFFF</color>
+    <color name="whitet">#B0FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#DFC8C8C8</color>
+    <color name="grayb">#494949</color>
+    <color name="grayp">#EBFFFFFF</color>
+    <color name="green">#F70AFF28</color>
+    <color name="fond">#E4E4E4</color>
+    <color name="transp">#00E4E3E3</color>
+    <color name="golden">#EFB810</color>
+    <color name="fondo">#FCFCFC</color>
+    <color name="backlight">@android:color/background_light</color>
+    <color name="naranja">#FFA15A</color>
+    <color name="light">#e1e6ec</color>
+    <color name="neomorph_background_color">#F1F3F6</color>
+    <color name="neomorph_shadow_color">#C2C2C7</color>
+    <color name="neomorph_highlight_color">#FFFFFF</color>
+    <color name="prueba">#4A888888</color>
+    <color name="dark_white">#EFF1F4</color>
+    <color name="greenPhone">#25C800</color>
+    <color name="transparentBlue">#CE03A9F4</color>
+</resources>

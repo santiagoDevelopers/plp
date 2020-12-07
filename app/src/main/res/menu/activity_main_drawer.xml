@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_inicio"
+            android:title="Inicio"
+            android:textSize="18sp"
+            android:icon="@drawable/ic_home" />
+        <item
+            android:id="@+id/nav_perfil"
+            android:title="Perfil"
+            android:icon="@drawable/ic_user" />
+
+        <item
+            android:id="@+id/nav_notificacion"
+            android:title="Notificaciones"
+            android:icon="@drawable/ic_notify" />
+
+        <item
+            android:id="@+id/nav_ajustes"
+            android:title="Ajustes"
+            android:icon="@drawable/ic_setting" />
+
+        <item
+            android:id="@+id/compartir_app"
+            android:title="Compartir App"
+            android:icon="@drawable/ic_compartir_avion" />
+        <item
+            android:id="@+id/cerrar_sesion"
+            android:title="Cerrar Sesión"
+            android:icon="@drawable/ic_logout" />
+
+    </group>
+</menu>
